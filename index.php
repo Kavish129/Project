@@ -22,18 +22,18 @@
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Packages</a>
+                            <a class="text-dark nav-link" href="#">Packages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="text-dark nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Enquiry</a>
+                            <a class="text-dark nav-link" href="#">Enquiry</a>
                         </li>
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Search</button> <!-- Changed to light button -->
+                        <button class="btn btn-outline-dark" type="submit">Search</button> <!-- Changed to light button -->
                     </form>
                 </div>
             </div>
