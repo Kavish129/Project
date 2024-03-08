@@ -50,7 +50,7 @@
             </ul>
         </nav>
 
-        <div class="bg-light py-2" >
+        <div class="py-2" style="background-color:#e3f2fd   ">
             <h3 class="text-center">Welcome to R.R. Tours and Travel</h3>
         </div>
 
@@ -62,7 +62,7 @@
             ?>
         </div>
 
-        <div class="bg-success  p-1 text-center mt-4">
+        <div class="p-1 text-center mt-4" style="background-color:#BCF6F2">
             <p><h3 class="text-dark">Welcome To R.R. Tours And Travels</h3></p>
         </div>
     </div>

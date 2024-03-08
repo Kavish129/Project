@@ -21,10 +21,10 @@
     <!-- First Child --> 
     <!-- navbar --> 
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
             <div class="container-fluid ">
                 <img src="../image/logo1.jpg" alt="" class="logo">
-                <nav class="navbar navbar-expand-lg navbar-light bg-info">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
                     <ul class="navbar-nav">
                         <li class=" text-dark nav-item">
                             <a href="" class="nav-link">Welcome Guest</a>
@@ -39,7 +39,7 @@
         </div>
         <!-- Third Child --> 
         <div class="row">
-            <div class="col-md-12 p-1 d-flex align-item-center" style="background-color: #e3f2fd">
+            <div class="col-md-12 p-1 d-flex align-item-center bg-info">
                 <div class="px-5">
                     <a href="#"><img src="../image/logo1.jpg" alt="" class="admin_image"></a>
                     <p class="text-dark text-center">Admin name</p> 
@@ -56,7 +56,7 @@
         </div>
     </div>
      <!-- last child --> 
-     <div class="p-3 text-center bg-info">
+     <div class="p-3 text-center" style="background-color:#BCF6F2">
        <p>Welcome To R.R. Tours And Travels</p>
      </div>
 <!-- Bootstrap js Link --> 
