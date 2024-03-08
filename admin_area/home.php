@@ -21,12 +21,12 @@
     <!-- First Child --> 
     <!-- navbar --> 
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-info ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <div class="container-fluid ">
                 <img src="../image/logo1.jpg" alt="" class="logo">
-                <nav class="navbar navbar-expand-lg navbar-light bg-info ">
+                <nav class="navbar navbar-expand-lg navbar-light bg-info">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class=" text-dark nav-item">
                             <a href="" class="nav-link">Welcome Guest</a>
                         </li>
                     </ul>
@@ -39,10 +39,10 @@
         </div>
         <!-- Third Child --> 
         <div class="row">
-            <div class="col-md-12 bg-secondary p-1 d-flex align-item-center">
+            <div class="col-md-12 p-1 d-flex align-item-center" style="background-color: #e3f2fd">
                 <div class="px-5">
                     <a href="#"><img src="../image/logo1.jpg" alt="" class="admin_image"></a>
-                    <p class="text-light text-center">Admin name</p> 
+                    <p class="text-dark text-center">Admin name</p> 
                 </div>
                 <!-- button*5>a.nav-link.text-light.bg-info.my-1 --> 
                 <div class="button text-center">
@@ -56,7 +56,7 @@
         </div>
     </div>
      <!-- last child --> 
-     <div class="bg-info p-3 text-center">
+     <div class="p-3 text-center bg-info">
        <p>Welcome To R.R. Tours And Travels</p>
      </div>
 <!-- Bootstrap js Link --> 
