@@ -35,7 +35,7 @@
         </nav>
         <!-- Second Child --> 
         <div class="bg-light">
-            <h3 class="text-center p-2">Manage Details</h3> 
+            <h3 class="text-center p-1"><h1 class="text-center">Manage Details</h1></h3> 
         </div>
         <!-- Third Child --> 
         <div class="row">
@@ -46,11 +46,11 @@
                 </div>
                 <!-- button*5>a.nav-link.text-light.bg-info.my-1 --> 
                 <div class="button text-center">
-                    <button class="my-3"><a href="insert_package.php" class="nav-link text-center bg-info my-1">Insert Pacakges</a></button>
-                    <button ><a href="" class="nav-link text-center bg-info my-1">View Packages</a></button>
-                    <button ><a href="" class="nav-link text-center bg-info my-1">View Enquiry</a></button>
-                    <button ><a href="" class="nav-link text-center bg-info my-1">List Users</a></button>
-                    <button ><a href="" class="nav-link text-center bg-info my-1">Logout</a></button>
+                    <button class="my-3"><a href="insert_package.php" class="nav-link text-center text-dark my-1">Insert Pacakges</a></button>
+                    <button ><a href="" class="nav-link text-center text-dark my-1">View Packages</a></button>
+                    <button ><a href="" class="nav-link text-center text-dark my-1">View Enquiry</a></button>
+                    <button ><a href="" class="nav-link text-center text-dark my-1">List Users</a></button>
+                    <button ><a href="" class="nav-link text-center text-dark my-1">Logout</a></button>
                 </div>
             </div>
         </div>
