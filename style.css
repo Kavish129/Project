@@ -14,3 +14,14 @@
     height: 200px;
     object-fit: cover; /* Changed to cover */
 }
+
+h3{
+    text-decoration:wavy;
+}
+
+body {
+    background-image: url('C:\xampp\htdocs\Project\Image\logo1.jpg'); /* Change 'path_to_your_background_image.jpg' to your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

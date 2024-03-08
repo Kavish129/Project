@@ -39,18 +39,18 @@
             </div>
         </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">  
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#E5E7E9">  
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Welcome Guest</a>
+                    <a class="text-dark nav-link" href="#">Welcome Guest</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="text-dark nav-link" href="#">Login</a>
                 </li>
             </ul>
         </nav>
 
-        <div class="bg-light py-4">
+        <div class="bg-light py-2" >
             <h3 class="text-center">Welcome to R.R. Tours and Travel</h3>
         </div>
 
@@ -62,8 +62,8 @@
             ?>
         </div>
 
-        <div class="bg-info p-3 text-center mt-4">
-            <p>Welcome To R.R. Tours And Travels</p>
+        <div class="bg-success  p-1 text-center mt-4">
+            <p><h3 class="text-dark">Welcome To R.R. Tours And Travels</h3></p>
         </div>
     </div>
 
