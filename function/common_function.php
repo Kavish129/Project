@@ -12,7 +12,7 @@ function getpackages(){
     $P_ID=$row['P_ID'];
     $Package_Title=$row['Package_Title'];
     $Package_Description=$row['Package_Description'];
-    $Package_Image1= trim($row['Package_image1']);
+    $Package_Image1= trim($row['Package_Image2']);
     echo"<div class='col-md-4 mb-2'>
     <div class='card'>
        <img src='./admin_area/P_images/$Package_Image1' class='card-img-top' alt='$Package_Title'>

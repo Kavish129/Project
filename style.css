@@ -5,16 +5,12 @@
 }
 
 .logo{
-    width:7%;
-    height:7%;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
 }
+
 .card-img-top{
     width: 100%;
     height: 200px;
-    object-fit: contain;
+    object-fit: cover; /* Changed from 'contain' to 'cover' */
 }
-
-/*.admin_image{
-    width: 100px;
-    object-fit: contain;
-}*/
