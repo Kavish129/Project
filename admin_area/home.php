@@ -56,8 +56,29 @@
         </div>
     </div>
      <!-- last child --> 
-     <div class="p-3 text-center" style="background-color:#BCF6F2">
-       <p>Welcome To R.R. Tours And Travels</p>
+      <!-- footer --> 
+      <footer class="text-dark p-0" style="background-color:#CDE4F3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="/" class="text-dark">Home</a></li>
+                            <li><a href="#" class="text-dark">Pacakage</a></li>
+                            <li><a href="#" class="text-dark">About Us</a></li>
+                            <li><a href="#" class="text-dark">Enquiry</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Contact Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="mailto:jkavish575@gmail.com">jkavish575@gmail.com</a></li>
+                            <li><a href="tel:+919510244436">+919510244436</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
      </div>
 <!-- Bootstrap js Link --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
