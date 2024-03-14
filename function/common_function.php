@@ -32,7 +32,7 @@ function getpackages(){
 function search_package(){
   global $con;
   if(isset($_GET['search_data_package'])){
-    $search_data_value=$_GET['search+data'];
+    $search_data_value=$_GET['search_data'];
   $search_query="Select * from `package` where 	Package_Keywords like'%$search_data_value%'";
   $result_query=mysqli_query($con,$search_query);
   // $row=mysqli_fetch_assoc($result_query);

@@ -31,7 +31,7 @@
                             <a class="text-dark nav-link" href="#">Enquiry</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
+                    <form class="d-flex" action="search_package.php" method="get">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_data">
                         <input type="submit" value="search" class="btn btn-outline-dark" name="search_data_package">
                     </form>
