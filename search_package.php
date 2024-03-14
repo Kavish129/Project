@@ -38,7 +38,6 @@
                 </div>
             </div>
         </nav>
-
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#E5E7E9">  
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
@@ -58,7 +57,7 @@
             <?php
             include('./include/connect.php');
             include('function/common_function.php');
-            getpackages();
+            search_package();
             ?>
         </div>
         <!-- footer --> 
