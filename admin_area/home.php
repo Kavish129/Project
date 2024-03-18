@@ -48,7 +48,6 @@
                 <div class="button text-center">
                     <button class="my-3"><a href="insert_package.php" class="nav-link text-center text-dark my-1">Insert Pacakges</a></button>
                     <button ><a href="" class="nav-link text-center text-dark my-1">View Packages</a></button>
-                    <button ><a href="" class="nav-link text-center text-dark my-1">View Enquiry</a></button>
                     <button ><a href="" class="nav-link text-center text-dark my-1">List Users</a></button>
                     <button ><a href="" class="nav-link text-center text-dark my-1">Logout</a></button>
                 </div>

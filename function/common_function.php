@@ -19,7 +19,7 @@ function getpackages(){
        <div class='card-body'>
         <h5 class='card-title'>$Package_Title</h5>
         <p class='card-text'>$Package_Description</p>
-        <a href='#' class='btn btn-info'>Enquiry Now</a>
+        <a href='enquiry.php?P_ID=$P_ID' class='btn btn-info'>Enquiry Now</a>
         <a href='PackageInfo.php?P_ID=$P_ID' class='btn btn-secondary'>Package Info</a>
       </div>
     </div>  
@@ -48,7 +48,7 @@ function search_package(){
        <div class='card-body'>
         <h5 class='card-title'>$Package_Title</h5>
         <p class='card-text'>$Package_Description</p>
-        <a href='#' class='btn btn-info'>Enquiry Now</a>
+        <a href='enquiry.php?P_ID=$P_ID' class='btn btn-info'>Enquiry Now</a>
         <a href='PackageInfo.php?P_ID=$P_ID' class='btn btn-secondary'>Package Info</a>
       </div>
     </div>
@@ -80,7 +80,7 @@ while($row=mysqli_fetch_assoc($result_query)){
          <div class='card-body'>
          <h5 class='card-title'>$Package_Title</h5>
          <p class='card-text'>$Package_Description</p>
-         <a href='#' class='btn btn-info'>Enquiry Now</a>
+         <a href='enquiry.php?P_ID=$P_ID' class='btn btn-info'>Enquiry Now</a>
          <a href='PackageInfo.php?P_ID=$P_ID' class='btn btn-secondary'>Package Info</a>
       </div>
   </div>
