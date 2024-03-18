@@ -53,12 +53,10 @@
         <div class="py-2" style="background-color:#e3f2fd   ">
             <h3 class="text-center">Welcome to R.R. Tours and Travel</h3>
         </div>
-
-        <div class="row px-4">
             <?php
             include('./include/connect.php');
             include('function/common_function.php');
-            getpackages();
+            package_info();
             ?>
         </div>
         <!-- footer --> 
@@ -68,7 +66,7 @@
                     <div class="col-md-6">
                         <h5>Quick Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="index.php"class="text-dark">Home</a></li>
+                            <li><a href="index.php" class="text-dark">Home</a></li>
                             <li><a href="display_all.php" class="text-dark">Pacakage</a></li>
                             <li><a href="#" class="text-dark">About Us</a></li>
                             <li><a href="#" class="text-dark">Enquiry</a></li>
