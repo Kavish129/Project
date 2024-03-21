@@ -3,14 +3,29 @@
  if(isset($_POST['insert_Enquiry'])){
     $Enquiry_Name=$_POST['Enquiry_Name'];
     $Email=$_POST['Email'];
-    $Contact_number=$_POST['Contact number'];
+    $Place=$_POST['Place'];
 
-    if($Enquiry_Name=='' or $Email=='' or $Contact_number==''){
+    if($Enquiry_Name=='' or $Email=='' or $Place==''){
         echo "<script>alert('Please Fill all the available fields')</script>";
         exit();
     }
 
-    
+    $insert_Enquiry="insert into ` enquiry`(Enquiry_Name,Email,Place) 
+    values('$Enquiry_Name','$Email','$Place')";
+    if($insert_Enquiry==TRUE){
+        $to_email="jkavish575@gmail.com";
+        $subject="New Enquiry from R.R. Tours and travels";
+        $body="Name:$Enquiry_Name \n Email:$Email \n Place:$Place";
+        $headers="From:$Email";
+
+        if(mail($to_email,$subject,$body,$headers)){
+            echo"Enquiry sent successfully";
+        }else{
+            echo"Error sendingg the enquiry";
+        }
+    }else{
+        echo"Error:" .$insert_Enquiry. "<br>" . $con->error;
+    }
  }
 ?>
 <!DOCTYPE html>
@@ -41,10 +56,10 @@
                 <label for="Email" class="form-label">Email</label>
                 <input type="text" name="Email" id="Email" class="form-control" placeholder=" Enter Email" autocomplete="off" required="required">
             </div>
-            <!-- Contact number --> 
+            <!-- Places to visit -->
             <div class="form-outline mb-4 w-50 m-auto">
-                <label for="Contact number" class="form-label">Contact number</label>
-                <input type="text" name="Contact number" id="Contact number" class="form-control" placeholder=" Enter Contact number" autocomplete="off" required="required">
+                <label for="Place" class="form-label">Place</label>
+                <input type="text" name="Place" id="Place" class="form-control" placeholder=" Enter the Place to visit" autocomplete="off" required="required">
             </div>
             <!-- Insert button --> 
             <div class="form-outline mb-4 w-50 m-auto">
