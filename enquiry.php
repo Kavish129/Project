@@ -4,28 +4,33 @@
     $Enquiry_Name=$_POST['Enquiry_Name'];
     $Email=$_POST['Email'];
     $Place=$_POST['Place'];
+    $Contact=$_POST['Contact'];
 
     if($Enquiry_Name=='' or $Email=='' or $Place==''){
         echo "<script>alert('Please Fill all the available fields')</script>";
         exit();
     }
 
-    $insert_Enquiry="insert into ` enquiry`(Enquiry_Name,Email,Place) 
-    values('$Enquiry_Name','$Email','$Place')";
-    if($insert_Enquiry==TRUE){
-        $to_email="jkavish575@gmail.com";
-        $subject="New Enquiry from R.R. Tours and travels";
-        $body="Name:$Enquiry_Name \n Email:$Email \n Place:$Place";
-        $headers="From:$Email";
-
-        if(mail($to_email,$subject,$body,$headers)){
-            echo"Enquiry sent successfully";
-        }else{
-            echo"Error sendingg the enquiry";
-        }
-    }else{
-        echo"Error:" .$insert_Enquiry. "<br>" . $con->error;
+    $insert_Enquiry="insert into `enquiry`(Enquiry_Name,Email,Place,Contact) 
+    values('$Enquiry_Name','$Email','$Place','$Contact')";
+    $result_query=mysqli_query($con, $insert_Enquiry);
+    if($result_query){
+        echo "<script>alert('SUCCESSFULLY INSERTED THE ENQURIES')</script>";
     }
+   // if($insert_Enquiry==TRUE){
+      //  $to_email="jkavish575@gmail.com";
+      //  $subject="New Enquiry from R.R. Tours and travels";
+      //  $body="Name:$Enquiry_Name \n Email:$Email \n Place:$Place";
+      //  $headers="From:$Email";
+
+      //  if(mail($to_email,$subject,$body,$headers)){
+      //      echo"Enquiry sent successfully";
+      //  }else{
+      //      echo"Error sendingg the enquiry";
+      ///  }
+   // }else{
+      //  echo"Error:" .$insert_Enquiry. "<br>" . $con->error;
+   // }
  }
 ?>
 <!DOCTYPE html>
@@ -60,6 +65,11 @@
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="Place" class="form-label">Place</label>
                 <input type="text" name="Place" id="Place" class="form-control" placeholder=" Enter the Place to visit" autocomplete="off" required="required">
+            </div>
+            <!-- Contact -->
+            <div class="form-outline mb-4 w-50 m-auto">
+                <label for="Contact" class="form-label">Contact</label>
+                <input type="number" name="Contact" id="Contact" class="form-control" placeholder="Enter Contact" autocomplete="off" required="required">
             </div>
             <!-- Insert button --> 
             <div class="form-outline mb-4 w-50 m-auto">
