@@ -19,16 +19,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-dark nav-link" href="#">Packages</a>
+                            <a class="text-dark nav-link" href="search_package.php">Packages</a>
                         </li>
                         <li class="nav-item">
                             <a class="text-dark nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-dark nav-link" href="#">Enquiry</a>
+                            <a class="text-dark nav-link" href="info.php">Enquiry</a>
                         </li>
                     </ul>
                     <form class="d-flex" action="search_package.php" method="get">

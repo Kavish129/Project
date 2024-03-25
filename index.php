@@ -28,7 +28,7 @@
                             <a class="text-dark nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-dark nav-link" href="C:\xampp\htdocs\Project\enquiry.php">Enquiry</a>
+                            <a class="text-dark nav-link" href="info.php">Enquiry</a>
                         </li>
                     </ul>
                     <form class="d-flex" action="search_package.php" method="get">
