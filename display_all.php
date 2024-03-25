@@ -28,7 +28,7 @@
                             <a class="text-dark nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-dark nav-link" href="C:\xampp\htdocs\Project\enquiry.php">Enquiry</a>
+                            <a class="text-dark nav-link" href="info.php">Enquiry</a>
                         </li>
                     </ul>
                     <form class="d-flex" action="search_package.php" method="get">
@@ -71,7 +71,7 @@
                             <li><a href="/" class="text-dark">Home</a></li>
                             <li><a href="#" class="text-dark">Pacakage</a></li>
                             <li><a href="#" class="text-dark">About Us</a></li>
-                            <li><a href="#" class="text-dark">Enquiry</a></li>
+                            <li><a href="info.php" class="text-dark">Enquiry</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6">

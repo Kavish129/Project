@@ -71,7 +71,7 @@
                             <li><a href="index.php"class="text-dark">Home</a></li>
                             <li><a href="display_all.php" class="text-dark">Pacakage</a></li>
                             <li><a href="#" class="text-dark">About Us</a></li>
-                            <li><a href="C:\xampp\htdocs\Project\enquiry.php" class="text-dark">Enquiry</a></li>
+                            <li><a href="info.php" class="text-dark">Enquiry</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6">
