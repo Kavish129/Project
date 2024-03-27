@@ -22,8 +22,41 @@
                     <!-- Email Field -->
                     <div class="form-outline mb-3">
                         <label for="User_Email" class="form-label">User Email</label>
-                        <input type="text" id="User_Email" class="form-control" placeholder="Enter your user email" 
+                        <input type="email" id="User_Email" class="form-control" placeholder="Enter your user email" 
                         autocomplete="off" required="required" name="User_Email"/>
+                    </div>
+                    <!-- Image -->
+                    <div class="form-outline mb-3">
+                        <label for="User_Image" class="form-label">User Image</label>
+                        <input type="file" id="User_Image" class="form-control"  required="required" name="User_Image"/>
+                    </div>
+                    <!-- Password Field --> 
+                    <div class="form-outline mb-3">
+                        <label for="User_Password" class="form-label">Password</label>
+                        <input type="password" id="User_Password" class="form-control" placeholder="Enter your Password" 
+                        autocomplete="off" required="required" name="User_Password"/>
+                    </div>
+                    <!-- Confirm Password Field --> 
+                    <div class="form-outline mb-3">
+                        <label for="Conf_User_Password" class="form-label">Confirm Password</label>
+                        <input type="password" id="Conf_User_Password" class="form-control" placeholder="Confirm Password" 
+                        autocomplete="off" required="required" name="Conf_User_Password"/>
+                    </div>
+                    <!-- Address Field --> 
+                    <div class="form-outline mb-3">
+                        <label for="User_Address" class="form-label">User Address</label>
+                        <input type="text" id="User_Address" class="form-control" placeholder="Enter your Address" 
+                        autocomplete="off" required="required" name="User_Address"/>
+                    </div>
+                    <!-- Contact Field --> 
+                    <div class="form-outline mb-3">
+                        <label for="User_Contact" class="form-label">User Contact</label>
+                        <input type="text" id="User_Contact" class="form-control" placeholder="Enter your Contact Number" 
+                        autocomplete="off" required="required" name="User_Contact"/>
+                    </div>
+                    <div class="text-center mt-4 pt-2">
+                        <input type="submit" value="Register" class="bg-info py-2 px-3 border-0" name="User_Register">
+                        <p>Already Have An Account?<a href="user_login.php">Login</a></p>
                     </div>
                 </form>
             </div>
