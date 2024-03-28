@@ -77,3 +77,50 @@
     <img src="../image/logo1.jpg" alt="logo1" class="center-image">
 </body>
 </html>
+
+<!-- php code --> 
+<?php
+include('../include/connect.php');
+if(isset($_POST['User_Register'])){
+    $User_Username=$_POST['User_Username'];
+    $User_Email=$_POST['User_Email'];
+    $User_Password=$_POST['User_Password'];
+    $hash_password=password_hash($User_Password,PASSWORD_DEFAULT);
+    $Conf_User_Password=$_POST['Conf_User_Password'];
+    $User_Address=$_POST['User_Address'];
+    $User_Contact=$_POST['User_Contact'];
+    $User_Image=$_FILES['User_Image']['name'];
+    $User_Image_tmp=$_FILES['User_Image']['tmp_name'];
+    
+    //Select Query
+    $select_query="Select * from `user_table` where Username='$User_Username'";
+    $result=mysqli_query($con,$select_query);
+    $rows_count=mysqli_num_rows($result);
+    if($rows_count>0){
+        echo"<script>alert('Data already present or exists')</script>";
+    }elseif ($User_Password!=$Conf_User_Password) {
+        echo"<script>alert('Passwords doesn't match')</script>";
+    } else{
+        // insert query
+    move_uploaded_file($User_Image_tmp,"./user_images/$User_Image");
+    $insert_query="insert into `user_table` (Username,Email,user_password,user_image,user_address,User_mobile) 
+    values('$User_Username',' $User_Email','$User_Password','$User_Image',' $User_Address','$User_Contact')";
+    $sql_execute=mysqli_query($con,$insert_query);
+    if($sql_execute){
+        echo"<script>alert('Data inserted successfully')</script>";
+    }else{
+        die(mysqli_error($con));
+    }
+    }
+    // insert query
+   /* move_uploaded_file($User_Image_tmp,'./user_images/$User_Image');
+    $insert_query="insert into `user_table` (Username,Email,user_password,user_image,user_address,User_mobile) 
+    values('$User_Username',' $User_Email','$User_Password','$User_Image',' $User_Address','$User_Contact')";
+    $sql_execute=mysqli_query($con,$insert_query);
+    if($sql_execute){
+        echo"<script>alert('Data inserted successfully')</script>";
+    }else{
+        die(mysqli_error($con));
+    }*/
+}
+?>
