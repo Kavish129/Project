@@ -78,7 +78,6 @@
         <div class="py-2" style="background-color:#e3f2fd   ">
             <h3 class="text-center">Welcome to R.R. Tours and Travel</h3>
         </div>
-        <img src="../image/logo1.jpg" alt="logo1" class="center-image">
             <?php
             include('./include/connect.php');
             include('function/common_function.php');
@@ -109,7 +108,8 @@
             </div>
         </footer>
     </div>
-
+    <!-- Centered Image -->
+    <img src="../image/logo1.jpg" alt="logo1" class="center-image">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
