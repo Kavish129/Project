@@ -63,7 +63,6 @@ if(isset($_POST['User_Login'])){
     if($row_count>0){
         if(password_verify($User_Password,$row_data['user_password'])){
             echo"<script>alert('Login successfully')</script>";
-
         }else{
             echo"<script>alert('Invalid Credentials')</script>";
         }
