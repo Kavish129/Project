@@ -6,6 +6,18 @@
     <title>User login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .body{
+            
+        }
+        .center-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: blur(5px);
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid my-3">
@@ -25,13 +37,15 @@
                         <input type="password" id="User_Password" class="form-control" placeholder="Enter your Password" 
                         autocomplete="off" required="required" name="User_Password"/>
                     </div>
-                    <div class="text-center mt-4 pt-2">
+                    <div class="mt-4 pt-2">
                         <input type="submit" value="Login" class="bg-info py-2 px-3 border-0" name="User_Login">
-                        <p>Don't Have An Account?<a href="user_registration.php">Register</a></p>
+                        <p  class="text-dark">Don't Have An Account?<a href="user_registration.php">Register</a></p>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <!-- Centered Image -->
+    <img src="../image/logo1.jpg" alt="logo1" class="center-image">
 </body>
 </html>
