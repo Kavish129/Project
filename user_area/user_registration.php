@@ -104,7 +104,7 @@ if(isset($_POST['User_Register'])){
         // insert query
     move_uploaded_file($User_Image_tmp,"./user_images/$User_Image");
     $insert_query="insert into `user_table` (Username,Email,user_password,user_image,user_address,User_mobile) 
-    values('$User_Username',' $User_Email','$User_Password','$User_Image',' $User_Address','$User_Contact')";
+    values('$User_Username',' $User_Email','$hash_password','$User_Image',' $User_Address','$User_Contact')";
     $sql_execute=mysqli_query($con,$insert_query);
     if($sql_execute){
         echo"<script>alert('Data inserted successfully')</script>";

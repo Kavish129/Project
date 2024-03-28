@@ -49,3 +49,26 @@
     <img src="../image/logo1.jpg" alt="logo1" class="center-image">
 </body>
 </html>
+<?php
+include('../include/connect.php');
+
+if(isset($_POST['User_Login'])){
+    $User_Username=$_POST['User_Username'];
+    $User_Password=$_POST['User_Password'];
+
+    $select_query="Select * from `user_table` where Username='$User_Username'";
+    $result=mysqli_query($con,$select_query);
+    $row_count=mysqli_num_rows($result);
+    $row_data=mysqli_fetch_assoc($result);
+    if($row_count>0){
+        if(password_verify($User_Password,$row_data['user_password'])){
+            echo"<script>alert('Login successfully')</script>";
+
+        }else{
+            echo"<script>alert('Invalid Credentials')</script>";
+        }
+    }else{
+        echo"<script>alert('Invalid Credentials')</script>";
+    } 
+}
+?>
