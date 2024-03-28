@@ -50,6 +50,7 @@
 </body>
 </html>
 <?php
+session_start();
 include('../include/connect.php');
 
 if(isset($_POST['User_Login'])){
@@ -62,8 +63,11 @@ if(isset($_POST['User_Login'])){
     $row_data=mysqli_fetch_assoc($result);
     if($row_count>0){
         if(password_verify($User_Password,$row_data['user_password'])){
+            $_SESSION['username'] = $User_Username;
+
+            // echo"<script>Window.open=('index.php')</script>";
             echo"<script>alert('Login successfully')</script>";
-            echo"<script>Window.open=('index.php')</script>";
+            header("Location: ../");
             exit();
         }else{
             echo"<script>alert('Invalid Credentials')</script>";
@@ -72,4 +76,5 @@ if(isset($_POST['User_Login'])){
         echo"<script>alert('Invalid Credentials')</script>";
     } 
 }
+session_abort();
 ?>

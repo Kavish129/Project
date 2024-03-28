@@ -40,15 +40,29 @@
         </nav>
 
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#E5E7E9">  
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="text-dark nav-link" href="#">Welcome Guest</a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-dark nav-link" href="./user_area/user_login.php">Login</a>
-                </li>
-            </ul>
-        </nav>
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+            <?php
+            session_start();
+
+            if(isset($_SESSION['username'])) {
+                echo '<a class="text-dark nav-link" href="#">Welcome '.$_SESSION['username'].'</a>';
+            } else {
+                echo '<a class="text-dark nav-link" href="#">Welcome guest</a>';
+            }
+            ?>
+        </li>
+        <li class="nav-item">
+            <?php
+            if(isset($_SESSION['username'])) {
+                echo '<a class="text-dark nav-link" href="user_area/user_logout.php">Logout</a>';
+            } else {
+                echo '<a class="text-dark nav-link" href="./user_area/user_login.php">Login</a>';
+            }
+            ?>
+        </li>
+    </ul>
+</nav>
 
         <div class="py-2" style="background-color:#e3f2fd   ">
             <h3 class="text-center">Welcome to R.R. Tours and Travel</h3>
