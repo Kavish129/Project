@@ -1,3 +1,4 @@
+
 <?php
 include('../include/connect.php');
 
@@ -5,6 +6,7 @@ if(isset($_POST['insert_package'])){
     $package_title=$_POST['Package_Title'];
     $package_description=$_POST['Description'];
     $package_keyword=$_POST['Keyword'];
+    $Package_Information=$_POST['Package_Information'];
 
     // accessing the images
     $package_image1=$_FILES['Image1'] ['name'];
@@ -17,7 +19,7 @@ if(isset($_POST['insert_package'])){
     $tmp_image3=$_FILES['Image3'] ['tmp_name'];
 
     // checking empty condition
-    if($package_title=='' or $package_description=='' or $package_keyword=='' or  $package_image1=='' or $package_image2=='' or $package_image3==''){
+    if($package_title=='' or $package_description=='' or $package_keyword=='' or  $package_image1=='' or $package_image2=='' or $package_image3=='' or $Package_Information==''){
         echo "<script>alert('Please Fill all the available fields')</script>";
         exit();
     }else{
@@ -27,8 +29,8 @@ if(isset($_POST['insert_package'])){
 
         // insert packages
         $insert_packages="insert into `package` (Package_Title,Package_Description,Package_Keywords,Package_image1,
-        Package_Image2,Package_Image3) values ('$package_title','$package_description','$package_keyword',' $package_image1',
-        ' $package_image2',' $package_image3')";
+        Package_Image2,Package_Image3,Package_Information) values ('$package_title','$package_description','$package_keyword',' $package_image1',
+        ' $package_image2',' $package_image3','$Package_Information')";
           $result_query=mysqli_query($con,$insert_packages);
           if($result_query){
           echo "<script>alert('SUCCESSFULLY INSERTED THE PACAKAGES')</script>";
@@ -84,6 +86,11 @@ if(isset($_POST['insert_package'])){
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="Image3" class="form-label">Package Image3</label>
                 <input type="file" name="Image3" id="Image3" class="form-control" required="required">
+            </div>
+            <!-- Image3 --> 
+            <div class="form-outline mb-4 w-50 m-auto">
+                <label for="Package_Information" class="form-label">Package Information</label>
+                <input type="text" name="Package_Information" id="$Package_Information" class="form-control" placeholder="Enter the Package Information" autocomplete="off" required="required">
             </div>
             <!-- Insert button --> 
             <div class="form-outline mb-4 w-50 m-auto">
