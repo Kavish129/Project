@@ -36,7 +36,7 @@
             <td><?php echo $package_Title ; ?></td>
             <td><img src='./P_images/<?php echo $package_image1 ; ?>' class='Packages_Images'></td>
             <td><a href='home.php?edit_package=<?php echo $Package_ID;?>'><i class='fa-solid fa-pen-to-square'></i></a></td>
-            <td><a href=''><i class='fa-solid fa-trash'></i></a></td>
+            <td><a href='home.php?delete_package=<?php echo $Package_ID;?>'><i class='fa-solid fa-trash'></i></a></td>
         </tr>
         <?php
         }

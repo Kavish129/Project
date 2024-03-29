@@ -91,6 +91,7 @@ if(isset($_POST['edit_package'])){
         $result_update=mysqli_query($con,$update_package);
         if($result_update){
             echo"<script>alert('Package Updated Successfully')</script>";
+            echo"<script>Windoe.open('./insert_package.php'.'_self')</script>";
         }
     }
 }

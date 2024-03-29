@@ -91,6 +91,9 @@ include('../include/connect.php');
         if(isset($_GET['edit_package'])){
             include('edit_package.php');
         }
+        if(isset($_GET['delete_package'])){
+            include('delete_package.php');
+        }
         ?>
     </div>
     <!-- last child --> 
