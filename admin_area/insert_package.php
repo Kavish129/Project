@@ -34,7 +34,9 @@ if(isset($_POST['insert_package'])){
           $result_query=mysqli_query($con,$insert_packages);
           if($result_query){
           echo "<script>alert('SUCCESSFULLY INSERTED THE PACAKAGES')</script>";
-          echo"<script>Windoe.open('./home.php'.'_self')</script>";
+          //echo"<script>Windoe.open('./home.php'.'_self')</script>";
+          header('location:./');
+          exit();
         }
     }
 }
