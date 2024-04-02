@@ -38,7 +38,8 @@
                         autocomplete="off" required="required" name="User_Password"/>
                     </div>
                     <div class="mt-4 pt-2">
-                        <input type="submit" value="Login" class="bg-info py-2 px-3 border-0" name="User_Login">
+                        <input type="submit" value="Login" class="bg-info py-2 px-3 border-0" name="User_Login"><br>
+                        <a href="Forgot Password.php">Forgot Password</a>
                         <p  class="text-dark">Don't Have An Account?<a href="user_registration.php">Register</a></p>
                     </div>
                 </form>
