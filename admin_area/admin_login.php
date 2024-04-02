@@ -57,7 +57,6 @@
 
 <?php
 include('../include/connect.php');
-session_start();
 
 if(isset($_POST['admin_login'])){
     $User_Username=$_POST['admin_name'];
@@ -82,5 +81,4 @@ if(isset($_POST['admin_login'])){
         echo"<script>alert('Invalid Credentials')</script>";
     } 
 }
-session_abort();
 ?>
