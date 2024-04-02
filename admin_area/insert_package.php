@@ -98,6 +98,8 @@ if(isset($_POST['insert_package'])){
             <!-- Insert button --> 
             <div class="form-outline mb-4 w-50 m-auto">
                <input type="submit" name="insert_package" class="btn btn-info mb-3 px-3" value="Insert Package">
+               <br>
+               <a href='./' class='btn btn-secondary'>Go back</a>
             </div>
         </form>
     </div>
