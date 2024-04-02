@@ -52,11 +52,11 @@ include('../include/connect.php');
             <div class="container-fluid ">
                 <img src="../image/logo1.jpg" alt="" class="logo">
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
-                    <ul class="navbar-nav">
+                    <!--<ul class="navbar-nav">
                         <li class="text-dark nav-item">
                             <a href="" class="nav-link">Welcome Guest</a>
                         </li>
-                    </ul>
+                    </ul>-->
                 </nav>
             </div>
         </nav>
@@ -69,7 +69,7 @@ include('../include/connect.php');
             <div class="col-md-12 p-1 d-flex align-items-center bg-info">
                 <div class="px-5">
                     <a href="#"><img src="../image/logo1.jpg" alt="" class="admin_image"></a>
-                    <p class="text-dark text-center">Admin name</p> 
+                    <!-- <p class="text-dark text-center">Admin name</p> -->
                 </div>
                 <!-- button*5>a.nav-link.text-light.bg-info.my-1 --> 
                 <div class="button text-center">
@@ -85,6 +85,7 @@ include('../include/connect.php');
     <!-- Fourth Child -->
     <div class="container my-3">
         <?php
+        session_start();
         if(isset($_GET['View_Packages'])){
             include('View_Packages.php');
         }
