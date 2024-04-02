@@ -25,7 +25,7 @@
                             <a class="text-dark nav-link" href="display_all.php">Packages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-dark nav-link" href="#">About Us</a>
+                            <a class="text-dark nav-link" href="about us.php">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="text-dark nav-link" href="info.php">Enquiry</a>
@@ -84,7 +84,7 @@
                         <ul class="list-unstyled">
                             <li><a href="index.php" class="text-dark">Home</a></li>
                             <li><a href="search_package.php" class="text-dark">Pacakage</a></li>
-                            <li><a href="#" class="text-dark">About Us</a></li>
+                            <li><a href="about us.php" class="text-dark">About Us</a></li>
                             <li><a href="info.php" class="text-dark">Enquiry</a></li>
                         </ul>
                     </div>
