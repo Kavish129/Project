@@ -18,6 +18,13 @@
         .img-fluid{
             width: 400px;
         }
+        .center-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: blur(5px);
+        }
     </style>
 </head>
 
@@ -33,12 +40,12 @@
                     <div class="form-outline mb-4">
                         <label for="admin_name" class="form-label">Username</label>
                         <input type="text" id="admin_name" name="admin_name" placeholder="Enter Your Username"
-                            required="required" class="form-control">
+                           autocomplete="off" required="required" class="form-control">
                     </div>
                     <div class="form-outline mb-4">
                         <label for="admin_password" class="form-label">Password</label>
                         <input type="password" id="admin_password" name="admin_password" placeholder="Enter Your Password"
-                            required="required" class="form-control">
+                           autocomplete="off" required="required" class="form-control">
                     </div>
                     <div>
                         <input type="submit" class="button py-2 px-3 border-0" name="admin_login" value="Login">
@@ -48,6 +55,8 @@
             </div>
         </div>
     </div>
+     <!-- Centered Image -->
+     <img src="../image/logo1.jpg" alt="logo1" class="center-image">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
@@ -73,7 +82,7 @@ if(isset($_POST['admin_login'])){
 
             // echo"<script>Window.open=('index.php')</script>";
             echo"<script>alert('Login successfully')</script>";
-            header("Location: ../");
+            header("Location: ./");
             exit();
         }else{
             echo"<script>alert('Invalid Credentials')</script>";

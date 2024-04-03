@@ -76,7 +76,7 @@ include('../include/connect.php');
                     <button class="my-3"><a href="insert_package.php" class="nav-link text-center text-dark my-1">Insert Packages</a></button>
                     <button ><a href="home.php?View_Packages" class="nav-link text-center text-dark my-1">View Packages</a></button>
                     <button ><a href="home.php?list_user" class="nav-link text-center text-dark my-1">List Users</a></button>
-                    <button ><a href="home.php?logout.php" class="nav-link text-center text-dark my-1">Logout</a></button>
+                    <button ><a href="./logout.php" class="nav-link text-center text-dark my-1">Logout</a></button>
                 </div>
             </div>
         </div>

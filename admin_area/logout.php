@@ -1,7 +1,6 @@
 <?php
 // Start the session
 session_start();
-
 // Unset all session variables
 $_SESSION = array();
 
@@ -9,6 +8,6 @@ $_SESSION = array();
 session_destroy();
 
 // Redirect the user to the login page or any other page
-header("Location: ./");
+header("Location: ./admin_login.php");
 exit();
 ?>
