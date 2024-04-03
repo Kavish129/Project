@@ -50,7 +50,7 @@ include('../include/connect.php');
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
             <div class="container-fluid ">
-                <img src="../image/logo1.jpg" alt="" class="logo">
+                <img src="../image/logo1.png" alt="" class="logo">
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
                     <!--<ul class="navbar-nav">
                         <li class="text-dark nav-item">

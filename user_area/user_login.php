@@ -10,13 +10,6 @@
         .body{
             
         }
-        .center-image {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            filter: blur(5px);
-        }
     </style>
 </head>
 <body>
@@ -45,8 +38,6 @@
             </div>
         </div>
     </div>
-    <!-- Centered Image -->
-    <img src="../image/logo1.jpg" alt="logo1" class="center-image">
 </body>
 </html>
 <?php

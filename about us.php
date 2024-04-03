@@ -14,116 +14,147 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
         }
 
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
         }
 
         .person {
-            flex-basis: calc(50% - 20px);
-            margin-bottom: 40px;
+            background-color: #fff;
+            border-radius: 10px;
             padding: 20px;
-            border: 1px solid #ccc;
-        }
-
-        .person:nth-child(even) {
-            align-self: flex-end;
-        }
-
-        .person:nth-child(odd) {
-            align-self: flex-start;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .person img {
-            max-width: 150px;
+            width: 100%;
+            max-width: 250px;
             height: auto;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .person h2 {
+            font-size: 24px;
             margin-bottom: 10px;
         }
 
+        .person p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        footer {
+            background-color: lightblue;    
+            padding: 1px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 3px;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
         .center-image {
-            position: absolute;
-            top: 50%;
+            position: fixed;
+            bottom: 20px;
             left: 50%;
-            transform: translate(-50%, -50%);
-            filter: blur(5px)
+            transform: translateX(-50%);
+            z-index: -1;
+            opacity: 0.1;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd">
-            <div class="container-fluid">
-                <img src="./Image/logo1.jpg" alt="" class="logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
+        <div class="container">
+            <img src="./Image/logo1.png" alt="" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
     <div class="container">
-        <div class="person">
-            <img src="./image/kavish.jpg" alt="kavish" class="image1">
-            <h2 class="text-dark">Kavish Jain</h2>
-            <p><b>I am the Project head of the RR Tours and Travel. <br> The main Idea and the creation of the Project is
-                done by me . </b></p>
-        </div>
-        <div class="person">
-            <img src="" alt="">
-            <h2 class="text-dark">Vicky</h2>
-            <p><b></b></p>
-        </div>
-        <div class="person">
-            <img src="" alt="">
-            <h2 class="text-dark">Akash Pandey</h2>
-            <p><b>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                Suspendisse ac
-                nisi nisl.</b></p>
-        </div>
-        <div class="person">
-            <img src="" alt="">
-            <h2 class="text-dark">Divyang</h2>
-            <p><b>Proin vitae fringilla ipsum, ut pharetra velit. Vivamus auctor velit nec enim gravida, a
-                condimentum urna
-                fermentum.</b></p>
-        </div>
-    </div>
-    <div>
-        <!-- footer -->
-        <footer class="text-dark p-0" style="background-color:#CDE4F3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h5>Quick Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="index.php" class="text-dark">Home</a></li>
-                            <li><a href="display_all.php" class="text-dark">Pacakage</a></li>
-                            <li><a href="about us.php" class="text-dark">About Us</a></li>
-                            <li><a href="info.php" class="text-dark">Enquiry</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h5>Contact Us</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="mailto:jkavish575@gmail.com">jkavish575@gmail.com</a></li>
-                            <li><a href="tel:+919510244436">+919510244436</a></li>
-                        </ul>
-                    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="person">
+                    <img src="./image/kavish.jpg" alt="Kavish Jain">
+                    <h2>Kavish Jain</h2>
+                    <p>I am the Project head of RR Tours and Travel. The main Idea and the creation of the Project is done by me.</p>
                 </div>
             </div>
-        </footer>
+            <div class="col-md-6">
+                <div class="person">
+                    <img src="./image/vicky.jpg" alt="Vicky Gawan">
+                    <h2>Vicky Gawan</h2>
+                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the project.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="person">
+                    <img src="./image/vicky.jpg" alt="Vicky Gawan">
+                    <h2>Akash Pandey</h2>
+                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the project.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="person">
+                    <img src="./image/vicky.jpg" alt="Vicky Gawan">
+                    <h2>Divyang Vaddoriya</h2>
+                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the project.</p>
+                </div>
+            </div>
+            <!-- Add more persons as needed -->
+        </div>
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul style="  padding-bottom: 0;">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="display_all.php">Packages</a></li>
+                        <li><a href="about us.php">About Us</a></li>
+                        <li><a href="info.php">Enquiry</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li><a href="mailto:jkavish575@gmail.com">jkavish575@gmail.com</a></li>
+                        <li><a href="tel:+919510244436">+919510244436</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Centered Image -->
     <img src="./image/logo1.jpg" alt="logo1" class="center-image">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
