@@ -1,5 +1,9 @@
 <?php
 include('../include/connect.php');
+if (!isset($_SESSION['admin_name'])) {
+    # code...
+    header("Location: ./admin_login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

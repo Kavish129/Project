@@ -22,7 +22,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
         }
 
         .person {
@@ -54,7 +54,7 @@
         }
 
         footer {
-            background-color: lightblue;    
+            background-color: lightblue;
             padding: 1px;
         }
 
@@ -86,10 +86,10 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
         <div class="container">
-            <img src="./Image/logo1.png" alt="" class="logo">
+            <img src="./Image/logo1.png" alt="logo1" class="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
@@ -101,28 +101,32 @@
                 <div class="person">
                     <img src="./image/kavish.jpg" alt="Kavish Jain">
                     <h2>Kavish Jain</h2>
-                    <p>I am the Project head of RR Tours and Travel. The main Idea and the creation of the Project is done by me.</p>
+                    <p>I am the Project head of RR Tours and Travel. The main Idea and the creation of the Project is
+                        done by me.</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="person">
                     <img src="./image/vicky.jpg" alt="Vicky Gawan">
                     <h2>Vicky Gawan</h2>
-                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the project.</p>
+                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the
+                        project.</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="person">
                     <img src="./image/vicky.jpg" alt="Vicky Gawan">
                     <h2>Akash Pandey</h2>
-                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the project.</p>
+                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the
+                        project.</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="person">
                     <img src="./image/vicky.jpg" alt="Vicky Gawan">
                     <h2>Divyang Vaddoriya</h2>
-                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the project.</p>
+                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the
+                        project.</p>
                 </div>
             </div>
             <!-- Add more persons as needed -->
@@ -150,7 +154,6 @@
                 </div>
             </div>
         </div>
-    </footer>
 
     <!-- Centered Image -->
     <img src="./image/logo1.jpg" alt="logo1" class="center-image">
