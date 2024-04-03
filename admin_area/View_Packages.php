@@ -30,7 +30,6 @@
             $package_image1=trim($row['Package_image1']);
             $number++;
             ?>
-            echo"
             <tr class='text-center text-dark'>
             <td><?php echo $number ; ?></td>
             <td><?php echo $package_Title ; ?></td>

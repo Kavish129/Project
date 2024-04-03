@@ -15,7 +15,6 @@
         <th> user email</th>
         <th> User Address</th>
         <th> user mobile </th>
-        <th> Delete </th>
         </tr>
         </thead>
         <tbody class='text-dark'>";
@@ -33,7 +32,6 @@
             <td>$user_email</td>
             <td> $User_Address</td>
             <td> $User_Contact</td>    
-            <td><a href='' class='text-dark'><i class='fa-solid fa-trash'></a></i></td>
             ";
         }
     }
