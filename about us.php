@@ -38,7 +38,7 @@
             max-width: 250px;
             height: auto;
             margin-bottom: 20px;
-            border-radius: 50%;
+            border-radius: 30%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -54,7 +54,7 @@
         }
 
         footer {
-            background-color: lightblue;
+            background-color: #EFF5F8;
             padding: 1px;
         }
 
@@ -84,7 +84,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
+    <nav class="navbar navbar-expand-lg navbar-light p-0" style="background-color:#EFF5F8">
         <div class="container">
             <img src="./Image/logo1.png" alt="logo1" class="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -108,14 +108,14 @@
             <div class="col-md-6">
                 <div class="person">
                     <img src="./image/vicky.jpg" alt="Vicky Gawan">
-                    <h2>Vicky Gawan</h2>
+                    <h2>Vicky Gawani</h2>
                     <p>I am the backend helper. My work is to give the data to the Project head and to understand the
                         project.</p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="person">
-                    <img src="./image/vicky.jpg" alt="Vicky Gawan">
+                    <img src="" alt="">
                     <h2>Akash Pandey</h2>
                     <p>I am the backend helper. My work is to give the data to the Project head and to understand the
                         project.</p>
@@ -123,7 +123,7 @@
             </div>
             <div class="col-md-6">
                 <div class="person">
-                    <img src="./image/vicky.jpg" alt="Vicky Gawan">
+                    <img src="" alt="">
                     <h2>Divyang Vaddoriya</h2>
                     <p>I am the backend helper. My work is to give the data to the Project head and to understand the
                         project.</p>
