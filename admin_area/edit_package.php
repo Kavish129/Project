@@ -12,6 +12,7 @@ if(isset($_GET['edit_package'])){
     $Package_Image2=trim($row['Package_Image2']);
     $Package_Image3=trim($row['Package_Image3']);
     $Link=$row['Link'];
+    $Link2=$row['Link2'];
 }
 ?>
 <div class="container mt-3">
@@ -61,6 +62,11 @@ if(isset($_GET['edit_package'])){
             <input type="text" id="Link" value="<?php echo $Link;?>" name="Link" class="form-control" 
             placeholder="Enter the Link">
         </div>
+        <div class="form-outline w-50 m-auto mb-3">
+            <label for="Link2" class="form-lable">Second Link</label>
+            <input type="text" id="Link2" value="<?php echo $Link2;?>" name="Link2" class="form-control" 
+            placeholder="Enter the Link">
+        </div>
         <div class=" w-50 m-auto text-dark">
             <input type="Submit" name="edit_package" value="Update Package">
             <a href='./' class='btn btn-secondary m-3'>Go back</a>
@@ -74,6 +80,7 @@ if(isset($_POST['edit_package'])){
     //$Package_Description=$_POST['Package_Description'];
     $Package_Keyword=$_POST['Package_Keywords'];
     $Link=$_POST['Link'];
+    $Link2=$_POST['Link2'];
 
     $package_image1=$_FILES['Package_image1']['name'];
     $Package_Image2=$_FILES['Package_image2']['name'];
@@ -94,7 +101,7 @@ if(isset($_POST['edit_package'])){
         // update query
         $update_package="update `package` set Package_Title='$Package_Title',Package_Description='$Package_Description',
         Package_Keywords='$Package_Keyword',Package_image1='$package_image1',Package_Image2='$Package_Image2',Package_Image3='$Package_Image3',
-        Link='$Link' where P_ID='$edit_id'";
+        Link='$Link',Link2='$Link2' where P_ID='$edit_id'";
 
         $result_update=mysqli_query($con,$update_package);
         if($result_update){

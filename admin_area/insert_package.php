@@ -100,6 +100,10 @@ if(isset($_POST['insert_package'])){
                 <label for="Link" class="form-label">Link</label>
                 <input type="text" name="Lnk" id="Link" class="form-control" placeholder="Link" autocomplete="off" required="required">
             </div>
+            <div class="form-outline mb-4 w-50 m-auto">
+                <label for="Link2" class="form-label">Second Link</label>
+                <input type="text" name="Link2" id="Link2" class="form-control" placeholder="Link" autocomplete="off" required="required">
+            </div>
             <!-- Insert button --> 
             <div class="form-outline mb-4 w-50 m-auto">
                <input type="submit" name="insert_package" class="btn btn-info mb-3 px-3" value="Insert Package">
