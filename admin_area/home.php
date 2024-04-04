@@ -30,6 +30,10 @@ if (!isset($_SESSION['admin_name'])) {
             object-fit: contain;
         }
 
+        .body {
+            overflow-x: hidden;
+        }
+
         .Packages_Images {
             width: 100px;
             object-fit: auto;

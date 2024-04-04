@@ -49,6 +49,11 @@ if (isset($_POST['insert_Enquiry'])) {
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css file -->
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .body {
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 
 <body class="bg-light">

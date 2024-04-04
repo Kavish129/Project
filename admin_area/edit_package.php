@@ -15,6 +15,11 @@ if(isset($_GET['edit_package'])){
     $Link2=$row['Link2'];
 }
 ?>
+<style>
+    .body {
+            overflow-x: hidden;
+        }
+</style>
 <div class="container mt-3">
     <h3 class="text-center">Edit Packages</h3>
     <form action="" method="post" enctype="multipart/form-data">
