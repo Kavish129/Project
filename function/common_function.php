@@ -76,11 +76,13 @@ function package_info()
       $Package_Image2 = trim($row['Package_image1']);
       $Package_Image3 = trim($row['Package_Image3']);
       $Package_Information = $row['Package_Information'];
+      $Link=$row['Link'];
 
       echo "<div class='row px-4'>
       <img src='./admin_area/P_images/$Package_Image1' class='d-block w-100' alt='$Package_Title' style='width:100%; border-radius: 3.25rem!important;   padding-top: 25px;     min-height: 400px;
       max-height: 400px;   object-fit: cover'>
                 <div class='card-body'>
+                <p><a href='$Link'>$Package_Title</a></p>
                 <h5 class='card-title'>$Package_Title</h5>
                 <p class='card-text'>$Package_Description</p>
                 <p class='text-secondary'>$Package_Information</p>

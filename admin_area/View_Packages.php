@@ -17,6 +17,7 @@
                 <th>Package Image</th>
                 <th>Edit</th>
                 <th>Delete</th>
+                <th>Link</th>
             </tr>
         </thead>
         <tbody style="background-color:#EBF6FC text-dark">
@@ -28,6 +29,7 @@
             $Package_ID=$row['P_ID'];
             $package_Title=$row['Package_Title'];
             $package_image1=trim($row['Package_image1']);
+            $Link=$row['Link'];
             $number++;
             ?>
             <tr class='text-center text-dark'>
@@ -36,6 +38,7 @@
             <td><img src='./P_images/<?php echo $package_image1 ; ?>' class='Packages_Images'></td>
             <td><a href='home.php?edit_package=<?php echo $Package_ID;?>'><i class='fa-solid fa-pen-to-square'></i></a></td>
             <td><a href='home.php?delete_package=<?php echo $Package_ID;?>'><i class='fa-solid fa-trash'></i></a></td>
+            <td><a href='<?php echo $Link >$package_Title ;?>'></a></td>
         </tr>
         <?php
         }
