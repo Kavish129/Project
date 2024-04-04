@@ -90,7 +90,7 @@ if(isset($_POST['insert_package'])){
                 <label for="Image3" class="form-label">Package Image3</label>
                 <input type="file" name="Image3" id="Image3" class="form-control" required="required">
             </div>
-            <!-- Image3 --> 
+            <!-- Information --> 
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="Package_Information" class="form-label">Package Information</label>
                 <input type="text" name="Package_Information" id="$Package_Information" class="form-control" placeholder="Enter the Package Information" autocomplete="off" required="required">
