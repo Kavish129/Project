@@ -29,7 +29,7 @@ if(isset($_POST['insert_package'])){
 
         // insert packages
         $insert_packages="insert into `package` (Package_Title,Package_Description,Package_Keywords,Package_image1,
-        Package_Image2,Package_Image3,Package_Information) values ('$package_title','$package_description','$package_keyword',' $package_image1',
+        Package_Image2,Package_Image3,Package_Information,	Link) values ('$package_title','$package_description','$package_keyword',' $package_image1',
         ' $package_image2',' $package_image3','$Package_Information')";
           $result_query=mysqli_query($con,$insert_packages);
           if($result_query){

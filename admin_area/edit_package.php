@@ -55,8 +55,9 @@ if(isset($_GET['edit_package'])){
                 <img src="./P_images/<?php echo $Package_Image3;?>" alt="..." class="edit_image">
             </div>
         </div>
-        <div class="w-50 m-auto" style="background-color:#EBF6FC text-dark">
+        <div class=" w-50 m-auto text-dark">
             <input type="Submit" name="edit_package" value="Update Package">
+            <a href='./' class='btn btn-secondary m-3'>Go back</a>
         </div>
     </form>
 </div>
@@ -92,8 +93,6 @@ if(isset($_POST['edit_package'])){
         if($result_update){
             echo"<script>alert('Package Updated Successfully')</script>";
             //echo"<script>Windoe.open('./insert_package.php'.'_self')</script>";
-            header('location:./');
-            exit();
         }
     }
 }
