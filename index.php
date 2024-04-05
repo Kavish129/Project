@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-            .body {
+    <style>
+        .body {
             overflow-x: hidden;
         }
-        </style>
+    </style>
 </head>
 
 <body>
@@ -104,7 +104,7 @@
                     <div class="col-md-6">
                         <h5>Contact Us</h5>
                         <ul class="list-unstyled">
-                            <li><a href="mailto:jkavish575@gmail.com">jkavish575@gmail.com</a></li>
+                            <li><a href="mailto:rrtravel272@gmail.com">rrtravel272@gmail.com</a></li>
                             <li><a href="tel:+919510244436">+919510244436</a></li>
                         </ul>
                     </div>

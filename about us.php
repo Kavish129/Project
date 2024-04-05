@@ -17,7 +17,7 @@
             background-color: #f8f9fa;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
+            overflowrrtravel272;
         }
 
         .container {
@@ -149,7 +149,7 @@
                 <div class="col-md-6">
                     <h5>Contact Us</h5>
                     <ul>
-                        <li><a href="mailto:jkavish575@gmail.com">jkavish575@gmail.com</a></li>
+                        <li><a href="mailto:rrtravel272@gmail.com">rrtravel272@gmail.com</a></li>
                         <li><a href="tel:+919510244436">+919510244436</a></li>
                     </ul>
                 </div>

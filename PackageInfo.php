@@ -13,7 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .body {
-            overflow-x: hidden;
+            overflowrrtravel272;
         }
 
         .center-image {
@@ -109,7 +109,7 @@
                 <div class="col-md-6">
                     <h5>Contact Us</h5>
                     <ul class="list-unstyled">
-                        <li><a href="mailto:jkavish575@gmail.com">jkavish575@gmail.com</a></li>
+                        <li><a href="mailto:rrtravel272@gmail.com">rrtravel272@gmail.com</a></li>
                         <li><a href="tel:+919510244436">+919510244436</a></li>
                     </ul>
                 </div>
