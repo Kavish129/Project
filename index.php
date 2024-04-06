@@ -77,7 +77,7 @@
             </ul>
         </nav>
 
-        <div class="py-2" style="background-color:#e3f2fd   ">
+        <div class="py-2" style="background-color:#e3f2fd">
             <h3 class="text-center">Welcome to R.R. Tours and Travel</h3>
         </div>
 
@@ -96,7 +96,7 @@
                         <h5>Quick Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="index.php" class="text-dark">Home</a></li>
-                            <li><a href="display_all.php" class="text-dark">Pacakage</a></li>
+                            <li><a href="display_all.php" class="text-dark">Package</a></li>
                             <li><a href="about us.php" class="text-dark">About Us</a></li>
                             <li><a href="info.php" class="text-dark">Enquiry</a></li>
                         </ul>
