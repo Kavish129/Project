@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd">
+        <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
             <div class="container-fluid">
                 <img src="./Image/logo1.png" alt="" class="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,7 +52,7 @@
             </div>
         </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#E5E7E9">
+        <nav class="navbar navbar-expand-lg " style="background-color:#E5E7E9">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <?php
