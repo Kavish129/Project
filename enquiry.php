@@ -90,6 +90,7 @@ if (isset($_POST['insert_Enquiry'])) {
             <!-- Insert button -->
             <div class="form-outline mb-4 w-50 m-auto">
                 <input type="submit" name="insert_Enquiry" class="btn btn-info mb-3 px-3" value="Insert Enquiry">
+                <a href='./' class='btn btn-secondary m-3'>Go back</a>
             </div>
         </form>
     </div>
