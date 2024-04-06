@@ -84,7 +84,7 @@ if (isset($_POST['insert_Enquiry'])) {
             <!-- Contact -->
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="Contact" class="form-label">Contact</label>
-                <input type="number" name="Contact" id="Contact" class="form-control" placeholder="Enter Contact"
+                <input type="number" name="Contact" id="Contact"class="form-control" placeholder="Enter Contact"
                     autocomplete="off" required="required">
             </div>
             <!-- Insert button -->
