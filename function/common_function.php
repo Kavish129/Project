@@ -5,7 +5,7 @@ include ('./include/connect.php');
 function getpackages()
 {
   global $con;
-  $select_query = "Select * from `package`order by rand() limit 0,6";
+  $select_query = "Select * from `package`order by rand()";
   $result_query = mysqli_query($con, $select_query);
   // $row=mysqli_fetch_assoc($result_query);
   //echo $row['Package_Title'];
