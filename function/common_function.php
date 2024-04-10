@@ -84,7 +84,7 @@ function package_info()
       max-height: 400px;   object-fit: cover'>
                 <div class='card-body'>
                 <p><a href='$Link'>$Package_Title</a></p>
-                <p><a href='$Link2'>View</a>
+                <p><a href='$Link2'>Video Link</a>
                 <h5 class='card-title'>$Package_Title</h5>
                 <p class='card-text'>$Package_Description</p>
                 <p class='text-secondary'>$Package_Information</p>
