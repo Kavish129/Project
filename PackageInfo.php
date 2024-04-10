@@ -41,15 +41,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="text-dark nav-link" href="display_all.php">Packages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="text-dark nav-link" href="about us.php">About Us</a>
-                        </li>
-                        <li class="nav-item">
+                         <li class="nav-item">
                             <a class="text-dark nav-link" href="info.php">Enquiry</a>
-                        </li>
+                        </li> 
                     </ul>
                     <form class="d-flex" action="search_package.php" method="get">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
