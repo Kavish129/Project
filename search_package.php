@@ -96,7 +96,6 @@
                         <h5>Quick Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="/" class="text-dark">Home</a></li>
-                            <li><a href="#" class="text-dark">Pacakage</a></li>
                             <li><a href="#" class="text-dark">About Us</a></li>
                             <li><a href="#" class="text-dark">Enquiry</a></li>
                         </ul>

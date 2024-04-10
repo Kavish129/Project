@@ -12,8 +12,8 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .body {
-            overflowrrtravel272;
+        body {
+            overflow-x: hidden;
         }
 
         .center-image {
@@ -95,7 +95,6 @@
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.php" class="text-dark">Home</a></li>
-                        <li><a href="display_all.php" class="text-dark">Pacakage</a></li>
                         <li><a href="about us.php" class="text-dark">About Us</a></li>
                         <li><a href="info.php" class="text-dark">Enquiry</a></li>
                     </ul>

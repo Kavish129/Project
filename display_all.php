@@ -96,7 +96,6 @@
                         <h5>Quick Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="index.php" class="text-dark">Home</a></li>
-                            <li><a href="search_package.php" class="text-dark">Pacakage</a></li>
                             <li><a href="about us.php" class="text-dark">About Us</a></li>
                             <li><a href="info.php" class="text-dark">Enquiry</a></li>
                         </ul>

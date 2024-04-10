@@ -84,11 +84,7 @@
                                     <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : ''; ?>"
                                         href="index.php">Home</a>
                                 </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'display_all.php') ? 'active' : ''; ?>"
-                                        href="display_all.php">Packages</a>
-                                </li> -->
-                                <li class="nav-item">
+                                 <li class="nav-item">
                                     <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'about us.php') ? 'active' : ''; ?>"
                                         href="about us.php">About Us</a>
                                 </li>
@@ -97,11 +93,11 @@
                                         href="info.php">Enquiry</a>
                                 </li>
                             </ul>
-                            <form class="d-flex m-5" action="search_package.php" method="get">
+                           <!-- <form class="d-flex m-5" action="search_package.php" method="get">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
                                     name="search_data" style="background-color: transparent;">
                                 <button class="btn btn-outline-light" type="submit" name="search_data_package">Search</button>
-                            </form>
+                            </form> -->
                             <?php if (isset($_SESSION['username'])) : ?>
                                 <a class="btn btn-outline-light" href="user_area/user_logout.php">Logout</a>
                             <?php else : ?>
@@ -133,7 +129,6 @@
                         <h5>Quick Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="index.php" class="text-dark">Home</a></li>
-                            <li><a href="display_all.php" class="text-dark">Package</a></li>
                             <li><a href="about us.php" class="text-dark">About Us</a></li>
                             <li><a href="info.php" class="text-dark">Enquiry</a></li>
                         </ul>

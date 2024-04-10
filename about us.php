@@ -141,7 +141,6 @@
                     <h5>Quick Links</h5>
                     <ul style="  padding-bottom: 0;">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="display_all.php">Packages</a></li>
                         <li><a href="about us.php">About Us</a></li>
                         <li><a href="info.php">Enquiry</a></li>
                     </ul>
