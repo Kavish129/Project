@@ -34,9 +34,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                         </li>
-                        <li class="nav-item">
+                      <!--  <li class="nav-item">
                             <a class="text-dark nav-link" href="search_package.php">Packages</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="text-dark nav-link" href="about us.php">About Us</a>
                         </li>
