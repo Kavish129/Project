@@ -41,6 +41,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about us.php">About us</a>
+                        </li>
                          <li class="nav-item">
                             <a class="text-dark nav-link" href="info.php">Enquiry</a>
                         </li> 
