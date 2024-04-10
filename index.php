@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
-            /* overflow-x: hidden; */
+            overflow-x: hidden;
             background-color: #f0f7fa;
         }
 
