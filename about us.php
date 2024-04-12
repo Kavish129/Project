@@ -109,7 +109,7 @@
             <div class="col-md-6">
                 <div class="person">
                     <img src="./image/vicky.jpg" alt="Vicky Gawan">
-                    <h2>Vicky Gawani</h2>
+                    <h2>Vicky Gawai</h2>
                     <p>I am the backend helper. My work is to give the data to the Project head and to understand the
                         project.</p>
                 </div>
