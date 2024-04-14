@@ -116,14 +116,6 @@
             </div>
             <div class="col-md-6">
                 <div class="person">
-                    <img src="" alt="">
-                    <h2>Akash Pandey</h2>
-                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the
-                        project.</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="person">
                     <img src="./image/divyang.png" alt="">
                     <h2>Divyang Vaddoriya</h2>
                     <p>I am the backend helper. My work is to give the data to the Project head and to understand the

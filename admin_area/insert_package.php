@@ -1,4 +1,3 @@
-
 <?php
 include('../include/connect.php');
 
@@ -8,19 +7,20 @@ if(isset($_POST['insert_package'])){
     $package_keyword=$_POST['Keyword'];
     $Package_Information=$_POST['Package_Information'];
     $Link=$_POST['Link'];
+    $Link2=$_POST['Link2'];
 
     // accessing the images
-    $package_image1=$_FILES['Image1'] ['name'];
-    $package_image2=$_FILES['Image2'] ['name'];
-    $package_image3=$_FILES['Image3'] ['name'];
+    $package_image1=$_FILES['Image1']['name'];
+    $package_image2=$_FILES['Image2']['name'];
+    $package_image3=$_FILES['Image3']['name'];
 
     // accessing image temp name
-    $tmp_image1=$_FILES['Image1'] ['tmp_name'];
-    $tmp_image2=$_FILES['Image2'] ['tmp_name'];
-    $tmp_image3=$_FILES['Image3'] ['tmp_name'];
+    $tmp_image1=$_FILES['Image1']['tmp_name'];
+    $tmp_image2=$_FILES['Image2']['tmp_name'];
+    $tmp_image3=$_FILES['Image3']['tmp_name'];
 
     // checking empty condition
-    if($package_title=='' or $package_description=='' or $package_keyword=='' or  $package_image1=='' or $package_image2=='' or $package_image3=='' or $Package_Information=='' or $Link==''){
+    if($package_title=='' or $package_description=='' or $package_keyword=='' or  $package_image1=='' or $package_image2=='' or $package_image3=='' or $Package_Information=='' or $Link=='' or $Link2==''){
         echo "<script>alert('Please Fill all the available fields')</script>";
         exit();
     }else{
@@ -30,12 +30,11 @@ if(isset($_POST['insert_package'])){
 
         // insert packages
         $insert_packages="insert into `package` (Package_Title,Package_Description,Package_Keywords,Package_image1,
-        Package_Image2,Package_Image3,Package_Information,Link) values ('$package_title','$package_description','$package_keyword',' $package_image1',
-        ' $package_image2',' $package_image3','$Package_Information','$Link')";
+        Package_Image2,Package_Image3,Package_Information,Link,Link2) values ('$package_title','$package_description','$package_keyword','$package_image1',
+        '$package_image2','$package_image3','$Package_Information','$Link','$Link2')";
           $result_query=mysqli_query($con,$insert_packages);
           if($result_query){
-          echo "<script>alert('SUCCESSFULLY INSERTED THE PACAKAGES')</script>";
-          //echo"<script>Windoe.open('./home.php'.'_self')</script>";
+          echo "<script>alert('SUCCESSFULLY INSERTED THE PACKAGES')</script>";
           header('location:./');
           exit();
         }
@@ -48,7 +47,7 @@ if(isset($_POST['insert_package'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insert Pacakges- Admin Dashboard</title>
+    <title>Insert Packages- Admin Dashboard</title>
     <!-- Bootstrap Css Link --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Font awesome --> 
@@ -68,7 +67,7 @@ if(isset($_POST['insert_package'])){
         <form action="" method="post" enctype="multipart/form-data">
             <!-- Title --> 
             <div class="form-outline mb-4 w-50 m-auto">
-                <label for="Package_Title" class="form-label">Package_Title</label>
+                <label for="Package_Title" class="form-label">Package Title</label>
                 <input type="text" name="Package_Title" id="Package_Title" class="form-control" placeholder=" Enter Package Title" autocomplete="off" required="required">
             </div>
             <!-- Description --> 
@@ -99,11 +98,11 @@ if(isset($_POST['insert_package'])){
             <!-- Information --> 
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="Package_Information" class="form-label">Package Information</label>
-                <input type="text" name="Package_Information" id="$Package_Information" class="form-control" placeholder="Enter the Package Information" autocomplete="off" required="required">
+                <input type="text" name="Package_Information" id="Package_Information" class="form-control" placeholder="Enter the Package Information" autocomplete="off" required="required">
             </div>
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="Link" class="form-label">Link</label>
-                <input type="text" name="Lnk" id="Link" class="form-control" placeholder="Link" autocomplete="off" required="required">
+                <input type="text" name="Link" id="Link" class="form-control" placeholder="Link" autocomplete="off" required="required">
             </div>
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="Link2" class="form-label">Second Link</label>
