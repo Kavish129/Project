@@ -116,16 +116,30 @@
             </div>
             <div class="col-md-6">
                 <div class="person">
+                    <img src="." alt="">
+                    <h2>Akash Pandey</h2>
+                    <p>I am the backend helper. My work is to give the data to the Project head and to understand the
+                        project.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="person">
                     <img src="./image/divyang.png" alt="">
                     <h2>Divyang Vaddoriya</h2>
                     <p>I am the backend helper. My work is to give the data to the Project head and to understand the
                         project.</p>
                 </div>
             </div>
-            <!-- Add more persons as needed -->
         </div>
     </div>
-
+    <p class=""><h4> The System is designed to give you a proper knowledge of Tours and travels and packages which will help you to plan the tours which you want to travel. 
+        You can also Contact us for more Packages we will Provide you the best packages yu wanted and you are wishing . 
+        The customer Can enquiry us about the rates of the packages which are provided by us to them.</h4>
+    </p>
+    <b><h2>Ambition</h2></b>
+    <p><h4>The ambition to create this system was to give user a proper information, quick answers to quiries within 12 hours by contacting them. 
+       Them System will provides them the advantage of creating their own packages using enquiry Page.</h4> 
+    </p>
     <footer>
         <div class="container">
             <div class="row">
